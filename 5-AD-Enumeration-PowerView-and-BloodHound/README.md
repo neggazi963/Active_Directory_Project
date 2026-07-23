@@ -125,27 +125,9 @@ The attacker also checks for existing Kerberos tickets (`klist`) – none are pr
 
 ## 5.4 Running SharpHound (Initial Attempts)
 
-![Failed Network Access](../images/image53.png)
-
-The attacker loads SharpHound and attempts to run it:
-
-```powershell
-powershell -ep bypass
-.\SharpHound.ps1
-Invoke-Bloodhound -CollectionMethod All -Domain MARVEL.local -zipFileName filezip.zip
-```
-
-But they misspell the function name as `Invoke-Bloodhound` (with a 'd' instead of 'h'? Actually they typed `Invoke-Bloohound`). The error appears:
-
-```
-ERROR|Unable to connect to LDAP, verify your credentials
-```
-
-This is because the command was incorrectly typed.
-
 ![Failed Network Access](../images/image56.png)
 
-The attacker corrects the command, this time specifying the Domain Controller IP, LDAP credentials (`fcastle` / `P@$#w0d`), and the correct function name `Invoke-Bloodhound`:
+specifying the Domain Controller IP, LDAP credentials (`fcastle` / `P@$#w0d`), and the correct function name `Invoke-Bloodhound`:
 
 ```powershell
 Invoke-Bloodhound -CollectionMethod All -Domain MARVEL.local -DomainController 172.20.10.11 -LdapUsername fcastle -LdapPassword 'P@$#w0d' -zipFileName filezip.zip
