@@ -61,7 +61,9 @@ When the victim broadcasts a request for `fileserver01`, Responder immediately r
 ### 2.3. Capturing and Cracking the Hash (Offline Phase)
 
 ![Failed Network Access](../images/image23.png)
-![Failed Network Access](../images/image24.png)
+![Failed Network Access](../images/imag24.png)
+
+
 
 The captured hash is presented in the standard **NTLMv2** format:
 
