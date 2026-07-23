@@ -24,7 +24,7 @@ The primary domain controller, **HYDRA-DC**, runs Windows Server 2016 Standard w
 - Domain Name System (DNS)
 - File and Storage Services
 
-![Active Directory Overview](images/image1.png)
+![Active Directory Overview](../images/image1.png)
 
 ---
 
