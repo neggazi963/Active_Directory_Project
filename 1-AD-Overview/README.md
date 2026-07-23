@@ -5,6 +5,11 @@
 
 This laboratory environment simulates a Windows Active Directory (AD) infrastructure for the fictional domain **MARVEL.local**, designed to demonstrate common security misconfigurations and attack vectors in enterprise Windows environments. The lab serves as an educational platform for understanding Active Directory security, privilege escalation paths, and exploitation techniques.
 
+1 Windows Server 2016
+2 Windows 10 Entreprise
+1 Kali
+
+
 ---
 
 ## Infrastructure Components
