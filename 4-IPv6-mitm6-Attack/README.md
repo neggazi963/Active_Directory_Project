@@ -143,7 +143,6 @@ This misconfiguration means that if an attacker compromises **any** of these acc
 
 ## 4.5 Mitigation Strategies
 
-![Failed Network Access](../images/image43.png)
 
 The lab documentation provides comprehensive countermeasures:
 
