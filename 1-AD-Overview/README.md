@@ -55,7 +55,7 @@ MARVEL.local
 | SQL Service | User | **Credential exposure: "My pwd is pwd"** |
 | Tony Stark | User | Standard user |
 
-![Active Directory Overview](images/image3.png)
+![Active Directory Overview](../images/image3.png)
 
 ### Computer Objects
 
@@ -64,7 +64,7 @@ MARVEL.local
 | SPIDERMAN | Workstation |
 | THEPUNISHER | Workstation |
 
-![Active Directory Overview](images/image2.png)
+![Active Directory Overview](../images/image2.png)
 
 ---
 
@@ -88,9 +88,9 @@ The **Default Domain Policy** reveals concerning password policy weaknesses:
 
 **Critical Finding**: Password complexity requirements were initially toggled during the lab, suggesting that security configurations are being actively modified, which may indicate an inconsistent security posture.
 
-![Active Directory Overview](images/image11.png)
-![Active Directory Overview](images/image12.png)
-![Active Directory Overview](images/image13.png)
+![Active Directory Overview](../images/image11.png)
+![Active Directory Overview](../images/image12.png)
+![Active Directory Overview](../images/image13.png)
 
 
 ### 3. Software Deployment Vulnerabilities
@@ -106,7 +106,7 @@ The software deployment source is accessible via network share `\\HYDRA-DC\Softw
 - Binary substitution attacks
 - Privilege escalation through application deployment
 
-![Active Directory Overview](images/image5.png)
+![Active Directory Overview](../images/image5.png)
 
 ### 4. Network Share Exposure
 
@@ -120,9 +120,9 @@ The **Software** share at `\\HYDRA-DC\Software` is configured with:
 
 **Risk**: If this share has overly permissive write access, it could be leveraged for lateral movement or privilege escalation via GPO software installation.
 
-![Active Directory Overview](images/image6.png)
-![Active Directory Overview](images/image7.png)
-![Active Directory Overview](images/image9.png)
+![Active Directory Overview](../images/image6.png)
+![Active Directory Overview](../images/image7.png)
+![Active Directory Overview](../images/image9.png)
 
 ---
 
@@ -151,10 +151,10 @@ New-ADUser `
 3. **OU Path**: Users are created in the `Groups` OU rather than `Users` OU
 4. **Password complexity bypass**: The initial password "P@$$w0rd1234567" must be changed at next logon, but the password is static
 
-![Active Directory Overview](images/image16.png)
-![Active Directory Overview](images/image17.png)
-![Active Directory Overview](images/image18.png)
-![Active Directory Overview](images/image19.png)
+![Active Directory Overview](../images/image16.png)
+![Active Directory Overview](../images/image17.png)
+![Active Directory Overview](../images/image18.png)
+![Active Directory Overview](../images/image19.png)
 
 ---
 
